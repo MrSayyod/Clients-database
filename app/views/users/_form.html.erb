@@ -13,6 +13,14 @@
     <%= f.text_field :username, autofocus: true %>
   </div>
   <div>
+    <%= f.label :password%>
+    <%= f.password_field :password, autofocus: true, size: 40 %>
+  </div>
+  <div>
+    <%= f.label :password_confirmation%>
+    <%= f.password_field :password_confirmation, autofocus: true, size: 40 %>
+  </div>
+  <div>
     <%= f.submit%>
   </div>
 <% end %>

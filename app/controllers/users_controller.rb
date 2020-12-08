@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_action :require_signin, except: [:index, :new, :create]
+  before_action :require_correct_user, only: [:edit, :update, :destroy]
+
   def index
     @users = User.all
   end
@@ -10,7 +13,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to @user 
+      session[:user_id] = @user.id
+      redirect_to @user
     else
       render 'new'      
     end

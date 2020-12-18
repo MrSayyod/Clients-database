@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contract: MyString
+  name: MyString
+  phone_model: MyString
+  workplace: MyString
+  paid_amount: 1
+  remaining_amount: 1
+  duration: 1
+  pay_date: 2020-12-19
+  phone_number: 1
+
+two:
+  contract: MyString
+  name: MyString
+  phone_model: MyString
+  workplace: MyString
+  paid_amount: 1
+  remaining_amount: 1
+  duration: 1
+  pay_date: 2020-12-19
+  phone_number: 1

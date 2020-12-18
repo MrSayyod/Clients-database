@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Contract:</strong>
+  <%= @client.contract %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @client.name %>
+</p>
+
+<p>
+  <strong>Phone model:</strong>
+  <%= @client.phone_model %>
+</p>
+
+<p>
+  <strong>Workplace:</strong>
+  <%= @client.workplace %>
+</p>
+
+<p>
+  <strong>Paid amount:</strong>
+  <%= @client.paid_amount %>
+</p>
+
+<p>
+  <strong>Remaining amount:</strong>
+  <%= @client.remaining_amount %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @client.duration %>
+</p>
+
+<p>
+  <strong>Pay date:</strong>
+  <%= @client.pay_date %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @client.phone_number %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>

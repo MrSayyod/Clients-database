@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_18_213806) do
+ActiveRecord::Schema.define(version: 2020_12_21_221734) do
 
   create_table "clients", force: :cascade do |t|
     t.string "contract"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_12_18_213806) do
     t.integer "duration"
     t.date "pay_date"
     t.integer "phone_number"
+    t.string "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

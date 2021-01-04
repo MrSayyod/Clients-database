@@ -10,6 +10,7 @@ class CreateClients < ActiveRecord::Migration[6.0]
       t.integer :duration
       t.date :pay_date
       t.integer :phone_number
+      t.string :status
 
       t.timestamps
     end

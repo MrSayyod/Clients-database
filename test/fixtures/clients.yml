@@ -8,8 +8,9 @@ one:
   paid_amount: 1
   remaining_amount: 1
   duration: 1
-  pay_date: 2020-12-19
+  pay_date: 2020-12-22
   phone_number: 1
+  status: MyString
 
 two:
   contract: MyString
@@ -19,5 +20,6 @@ two:
   paid_amount: 1
   remaining_amount: 1
   duration: 1
-  pay_date: 2020-12-19
+  pay_date: 2020-12-22
   phone_number: 1
+  status: MyString

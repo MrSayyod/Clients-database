@@ -35,14 +35,233 @@
   <%= @client.duration %>
 </p>
 
-<p>
-  <strong>Pay date:</strong>
-  <%= @client.pay_date %>
-</p>
+
+<% if @client.duration == 3 %>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 1.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 2.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+<% end %>
+
+<% if @client.duration == 4 %>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 1.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 2.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 3.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+<% end %>
+<% if @client.duration == 5 %>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 1.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 2.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 3.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 4.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+<% end %>
+<% if @client.duration == 6 %>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 1.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 2.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 3.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 4.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 5.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+    <%# check_box_tag  :remaining_amount, 1, @client.remaining_amount == 1 ? true : false %>
+  </p>
+<% end %>
+<% if @client.duration == 7 %>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 1.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 2.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 3.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 4.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 5.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+    <%# check_box_tag  :remaining_amount, 1, @client.remaining_amount == 1 ? true : false %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 6.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+    <%# check_box_tag  :remaining_amount, 1, @client.remaining_amount == 1 ? true : false %>
+  </p>
+<% end %>
+<% if @client.duration == 8 %>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 1.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 2.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 3.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 4.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 5.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+    <%# check_box_tag  :remaining_amount, 1, @client.remaining_amount == 1 ? true : false %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 6.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+    <%# check_box_tag  :remaining_amount, 1, @client.remaining_amount == 1 ? true : false %>
+  </p>
+  <p>
+    <strong>Pay date:</strong>
+    <%= @client.pay_date + 7.month %>
+    <strong>Payment amount:</strong>
+    <%= @client.remaining_amount/@client.duration %>
+    <%# check_box_tag  :remaining_amount, 1, @client.remaining_amount == 1 ? true : false %>
+  </p>
+<% end %>
 
 <p>
   <strong>Phone number:</strong>
   <%= @client.phone_number %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @client.status %>
 </p>
 
 <%= link_to 'Edit', edit_client_path(@client) %> |

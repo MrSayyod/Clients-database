@@ -17,7 +17,7 @@ class ClientsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create client" do
     assert_difference('Client.count') do
-      post clients_url, params: { client: { contract: @client.contract, duration: @client.duration, name: @client.name, paid_amount: @client.paid_amount, pay_date: @client.pay_date, phone_model: @client.phone_model, phone_number: @client.phone_number, remaining_amount: @client.remaining_amount, workplace: @client.workplace } }
+      post clients_url, params: { client: { contract: @client.contract, duration: @client.duration, name: @client.name, paid_amount: @client.paid_amount, pay_date: @client.pay_date, phone_model: @client.phone_model, phone_number: @client.phone_number, remaining_amount: @client.remaining_amount, status: @client.status, workplace: @client.workplace } }
     end
 
     assert_redirected_to client_url(Client.last)
@@ -34,7 +34,7 @@ class ClientsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update client" do
-    patch client_url(@client), params: { client: { contract: @client.contract, duration: @client.duration, name: @client.name, paid_amount: @client.paid_amount, pay_date: @client.pay_date, phone_model: @client.phone_model, phone_number: @client.phone_number, remaining_amount: @client.remaining_amount, workplace: @client.workplace } }
+    patch client_url(@client), params: { client: { contract: @client.contract, duration: @client.duration, name: @client.name, paid_amount: @client.paid_amount, pay_date: @client.pay_date, phone_model: @client.phone_model, phone_number: @client.phone_number, remaining_amount: @client.remaining_amount, status: @client.status, workplace: @client.workplace } }
     assert_redirected_to client_url(@client)
   end
 

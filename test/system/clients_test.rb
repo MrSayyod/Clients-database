@@ -22,6 +22,7 @@ class ClientsTest < ApplicationSystemTestCase
     fill_in "Phone model", with: @client.phone_model
     fill_in "Phone number", with: @client.phone_number
     fill_in "Remaining amount", with: @client.remaining_amount
+    fill_in "Status", with: @client.status
     fill_in "Workplace", with: @client.workplace
     click_on "Create Client"
 
@@ -41,6 +42,7 @@ class ClientsTest < ApplicationSystemTestCase
     fill_in "Phone model", with: @client.phone_model
     fill_in "Phone number", with: @client.phone_number
     fill_in "Remaining amount", with: @client.remaining_amount
+    fill_in "Status", with: @client.status
     fill_in "Workplace", with: @client.workplace
     click_on "Update Client"
 

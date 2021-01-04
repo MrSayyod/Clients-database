@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>T/r</th>
       <th>Contract</th>
       <th>Name</th>
       <th>Phone model</th>
@@ -14,6 +15,7 @@
       <th>Duration</th>
       <th>Pay date</th>
       <th>Phone number</th>
+      <th>Status</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,6 +23,7 @@
   <tbody>
     <% @clients.each do |client| %>
       <tr>
+        <td><%= client.id %></td>
         <td><%= client.contract %></td>
         <td><%= client.name %></td>
         <td><%= client.phone_model %></td>
@@ -30,6 +33,7 @@
         <td><%= client.duration %></td>
         <td><%= client.pay_date %></td>
         <td><%= client.phone_number %></td>
+        <td><%= client.status %></td>
         <td><%= link_to 'Show', client %></td>
         <td><%= link_to 'Edit', edit_client_path(client) %></td>
         <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -10,7 +10,7 @@
   </head>
 
   <body>
-  <%= link_to "Homepage", users_path %>
+  <%= link_to "Homepage", root_path %>
   <% if flash[:notice] %>
     <p><%= notice %></p>
   <% else %>
@@ -22,7 +22,7 @@
         <%= link_to current_user.username, current_user %>
         <%= link_to 'Sign Out', session_path, method: :delete, notice: "Signed out!" %>
       <% else %>
-        <%= link_to 'Sign Up', new_user_path %>
+        <%# link_to 'Sign Up', new_user_path %>
         <%= link_to 'Sign In', new_session_path %>
       <% end %>
     </p>
